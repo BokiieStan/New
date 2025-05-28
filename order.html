@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place an Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Commission Order Form</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+    </nav>
+
+    <p>Please fill out the form below with as much detail as possible about your commission request. I'll get back to you via email to discuss the details and provide a final quote.</p>
+
+    <!-- 
+    To make this form work, sign up for a free account at Formspree.io. 
+    Create a new form, and replace YOUR_FORMSPREE_ENDPOINT_HERE 
+    in the action attribute of this form with the endpoint URL Formspree provides you.
+    Also, configure your Formspree form to send submissions to clydekevin82@gmail.com. 
+    -->
+    <form action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="service_type">Service Type:</label>
+            <select id="service_type" name="service_type" required>
+                <option value="Live2D Rigging">Live2D Rigging</option>
+                <option value="Art & Character Design">Art & Character Design</option>
+                <option value="General Art">General Art</option>
+            </select>
+        </div>
+        <div>
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" rows="5" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit Order</button>
+        </div>
+    </form>
+</body>
+</html>
